@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 54395925}
   - component: {fileID: 54395924}
   m_Layer: 0
-  m_Name: Grab Interactable
+  m_Name: Green_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 137616592}
   - component: {fileID: 137616591}
   m_Layer: 0
-  m_Name: Grab Interactable (5)
+  m_Name: Tower3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 205601213}
   - component: {fileID: 205601212}
   m_Layer: 0
-  m_Name: Grab Interactable (1)
+  m_Name: Purple_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2158,7 +2158,7 @@ GameObject:
   - component: {fileID: 1189267029}
   - component: {fileID: 1189267028}
   m_Layer: 0
-  m_Name: Grab Interactable (3)
+  m_Name: Tower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2527,7 +2527,7 @@ GameObject:
   - component: {fileID: 1392901912}
   - component: {fileID: 1392901911}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: MainCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3295,7 +3295,7 @@ GameObject:
   - component: {fileID: 1932813587}
   - component: {fileID: 1932813586}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3435,7 +3435,7 @@ GameObject:
   - component: {fileID: 2034013344}
   - component: {fileID: 2034013343}
   m_Layer: 0
-  m_Name: Grab Interactable (4)
+  m_Name: Tower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3739,7 +3739,7 @@ GameObject:
   - component: {fileID: 2068061318}
   - component: {fileID: 2068061317}
   m_Layer: 0
-  m_Name: Grab Interactable (2)
+  m_Name: Blue_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4085,7 +4085,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2074125329
 Canvas:
   m_ObjectHideFlags: 0
@@ -4140,10 +4140,10 @@ SceneRoots:
   - {fileID: 10127631}
   - {fileID: 54395930}
   - {fileID: 205601218}
+  - {fileID: 2068061323}
   - {fileID: 1189267034}
   - {fileID: 2034013349}
   - {fileID: 137616597}
-  - {fileID: 2068061323}
   - {fileID: 347216141}
   - {fileID: 235115842}
   - {fileID: 2074125330}
