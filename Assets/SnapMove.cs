@@ -17,36 +17,28 @@ public class SnapMove : MonoBehaviour
      
     Vector2 aaa = actionRef.action.ReadValue<Vector2>();
     Debug.Log(aaa);
-        
-        
-        
-        
-        // Check if the left XR Controller is connected
-    //    if (leftXRController != null)
-    //    {
-    //        // Get the input device from the interaction manager
-    //        XRController interactor = leftXRController.GetComponent<XRController>();
-    //        if (interactor != null)
-    //        {
-    //            InputDevice inputDevice = interactor.XRController.inputDevice;
 
-    //            // Check if the input device is associated with the left hand
-    //            if (inputDevice.characteristics.HasFlag(InputDeviceCharacteristics.Left))
-    //            {
-    //                // Get the joystick input
-    //                Vector2 joystickInput;
-    //                if (inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out joystickInput))
-    //                {
-    //                    // Check if joystick input exceeds the threshold
-    //                    if (joystickInput.magnitude > threshold)
-    //                    {
-    //                        // Print the joystick input to the console
-    //                        Debug.Log("Left Controller Joystick Input: " + joystickInput);
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
+        //Check if the left XR Controller is connected
+        if (leftXRController != null)
+        {
+  
+                    // Get the joystick input
+     
+            
+                        // Check if joystick input exceeds the threshold
+                        if (aaa.magnitude > threshold)
+                        {
+                            // Print the joystick input to the console
+                            Debug.Log("Left Controller Joystick Input: " + aaa);
+
+                //take the vector
+                //only one direction: forward
+                //teleport user position to the jumped/snapped distance
+
+                        }
+
+                   
+        }
     }
 }
 
