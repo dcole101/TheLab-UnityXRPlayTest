@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR;
 
 public class ScaleObjects : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class ScaleObjects : MonoBehaviour
 
     // The amount by which the objects should be scaled
     public float scaleMultiplier = 1.5f;
+
+    public Canvas menuUI;
+    private bool isMenuPressedDown = false;
 
     void Start()
     {
@@ -44,6 +49,26 @@ public class ScaleObjects : MonoBehaviour
                 // Scale the object down
                 obj.transform.localScale /= scaleMultiplier;
             }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), InputHelpers.Button.PrimaryButton, out bool isPressed);
+
+    
+        if (isPressed)
+        {
+            if (!isMenuPressedDown)
+            {
+                menuUI.enabled = !menuUI.enabled;
+            }
+            isMenuPressedDown = true;
+        }
+        else
+        {
+            isMenuPressedDown = false;
         }
     }
 }

@@ -15,7 +15,7 @@ public class SnapMove : MonoBehaviour
     private void Update()
     {
      
-    Vector2 aaa = actionRef.action.ReadValue<Vector2>();
+    Vector3 aaa = actionRef.action.ReadValue<Vector2>();
     Debug.Log(aaa);
 
         //Check if the left XR Controller is connected
@@ -36,8 +36,7 @@ public class SnapMove : MonoBehaviour
                 //teleport user position to the jumped/snapped distance
 
                         }
-
-                   
+   
         }
     }
 }

@@ -24,7 +24,7 @@ public class TeleportVisibility : MonoBehaviour
                 if (distance <= triggerDistance)
                 {
                     // Perform action here (replace with your desired code)
-                    Debug.Log("Player is close to " + targetObject.name);
+                    //Debug.Log("Player is close to " + targetObject.name);
 
                     targetObject.SetActive(false);
 
@@ -35,7 +35,7 @@ public class TeleportVisibility : MonoBehaviour
                 if (distance > triggerDistance)
                 {
                     // Perform action here (replace with your desired code)
-                    Debug.Log("Player is leaving " + targetObject.name);
+                    //Debug.Log("Player is leaving " + targetObject.name);
 
                     targetObject.SetActive(true);
 
