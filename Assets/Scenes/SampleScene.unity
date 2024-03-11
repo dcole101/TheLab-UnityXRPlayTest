@@ -10413,7 +10413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1308920830
 Transform:
   m_ObjectHideFlags: 0
@@ -10661,8 +10661,8 @@ MonoBehaviour:
   angularVelocitySmoothing: 0.15
   useAcceleration: 1
   accelerationStrength: 1
-  accelerationMin: 0
-  accelerationMax: 0
+  accelerationMin: 0.001
+  accelerationMax: 0.002
   accelerationSmoothing: 0.15
   useVelocity: 1
   velocityStrength: 1

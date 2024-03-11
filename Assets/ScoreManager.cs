@@ -8,24 +8,20 @@ public class ScoreManager : MonoBehaviour
     public Collider basketCollider; // Assign the basket collider in the Inspector
     public TextMeshProUGUI scoreText; // Assign the TextMeshPro text object in the Inspector
 
-    // This function is called when a GameObject collides with another GameObject
-    void OnCollisionEnter(Collision collision)
+    // This function is called when the ball enters the basket's trigger zone
+    private void OnTriggerEnter(Collider other)
     {
         // Check if the collided GameObject's collider matches the assigned ball collider
-        if (collision.collider == ballCollider)
+        if (other == ballCollider)
         {
-            // Check if the other collider involved in the collision matches the assigned basket collider
-            if (collision.gameObject == basketCollider.gameObject)
-            {
-                // Increment the score by 1
-                score++;
+            // Increment the score by 1
+            score++;
 
-                // Update the score text
-                UpdateScoreText();
+            // Update the score text
+            UpdateScoreText();
 
-                // Print the updated score to the console (optional)
-                Debug.Log("Score: " + score);
-            }
+            // Print the updated score to the console (optional)
+            Debug.Log("Score: " + score);
         }
     }
 
@@ -34,7 +30,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score.ToString();
+            scoreText.text = score.ToString();
         }
     }
 }
